@@ -37,8 +37,28 @@ func main() {
 	salgadinhoTotal := salgadinhoPrice * salgadinhoAmount
 	total := bananaTotal + cervejaTotal + abacateTotal + salgadinhoTotal
 
-	fmt.Printf("Banana: %.2f \n Cerveja: %.2f \n Abacate: %.2f \n Salgadinho: %.2f \n Total a pagar: %.2f", bananaTotal, cervejaTotal, abacateTotal, salgadinhoTotal, total)
+	fmt.Printf("Banana: %.2f \n Cerveja: %.2f \n Abacate: %.2f \n Salgadinho: %.2f \n Total a pagar: %.2f \n", bananaTotal, cervejaTotal, abacateTotal, salgadinhoTotal, total)
 
 	//exercise 4
+	var myName string
+	myName = "Noboru"
+	favoriteColor := `Orange`
+	fmt.Printf("Hi, I'm %v and my favorite color is %v", myName, favoriteColor)
+
+	//exercise 5
+	first := 10 > 0
+	second := 10*10 == 100
+	third := true == true
+	fourth := false != false
+	fifth := false != true
+	fmt.Printf("\n %v, %T \n %v, %T \n %v, %T \n %v, %T \n %v, %T \n", first, first, second, second, third, third, fourth, fourth, fifth, fifth)
+
+	//exercise 6
+	hammer := "hammer"
+	screw := "screw"
+	nail := "nail"
+
+	fmt.Printf("\n %v", len(hammer) > len(screw) && len(nail) < len(hammer))
+	fmt.Printf("\n %v", first && second || fourth && fifth)
 
 }
