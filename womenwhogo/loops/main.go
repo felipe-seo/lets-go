@@ -73,5 +73,4 @@ func loopExercise6() {
 	for i, v := range littleSlice {
 		fmt.Println(i+1, v)
 	}
-
 }
