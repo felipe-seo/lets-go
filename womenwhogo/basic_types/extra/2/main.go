@@ -2,15 +2,19 @@ package main
 
 import (
 	"fmt"
-	"strconv"
 	"time"
 )
 
 func main() {
 	fmt.Print("Type the year you were born in: ")
-	var birthYear string
-	fmt.Scanln(&birthYear)
+	var birthYearString int
+	fmt.Scanln(&birthYearString)
 	currentYear := time.Now().Year()
-	age := currentYear - strconv.Atoi(birthYear)
-	fmt.Println(age)
+	//birthYear, e := strconv.Atoi(birthYearString)
+	//if e == nil {
+	//	fmt.Printf("%T \n %v", birthYear, birthYear)
+	//}
+
+	age := currentYear - birthYearString
+	fmt.Println("\n", age)
 }
