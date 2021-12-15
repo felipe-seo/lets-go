@@ -39,6 +39,7 @@ func main() {
 }
 
 func divideTab(il map[int]item, el []string) {
+
 	//fmt.Println(il, el)
 	//fazer condição para interromper caso venha alguma lista vazia
 	total := 0.0
@@ -46,6 +47,8 @@ func divideTab(il map[int]item, el []string) {
 		total += element.price * element.amount
 		fmt.Println(total)
 	}
+	remainder := int(total) % int(len(el))
+	fmt.Println(remainder)
 	totalPerAccount := total / float64(len(el))
 	fmt.Println(totalPerAccount)
 }
